@@ -1,0 +1,131 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f8;
+  color: #243047;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 35px 16px;
+}
+
+.payment-card,
+.history {
+  max-width: 520px;
+  margin: 0 auto 25px;
+  padding: 28px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 22px #00000012;
+}
+
+h1,
+h2 {
+  color: #174ea6;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin: 16px 0 7px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd4e0;
+  border-radius: 7px;
+  background: white;
+  font-size: 15px;
+}
+
+.fee {
+  margin-top: 20px;
+  padding: 15px;
+  background: #edf4ff;
+  color: #174ea6;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 17px;
+  border: none;
+  border-radius: 7px;
+  background: #174ea6;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #103b80;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.message {
+  margin-top: 18px;
+  overflow-wrap: anywhere;
+}
+
+.receipt {
+  margin-top: 20px;
+  padding: 16px;
+  background: #edf8ef;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.history-item {
+  padding: 15px;
+  margin-top: 14px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.history-item p,
+.receipt p {
+  margin: 8px 0;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .history,
+  form,
+  .subtitle,
+  .message {
+    display: none;
+  }
+
+  .payment-card {
+    box-shadow: none;
+  }
+}
